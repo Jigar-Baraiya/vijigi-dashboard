@@ -4,4 +4,5 @@
 	or 
 	die("cannot establish connection with database");
 	
+	
 ?>
