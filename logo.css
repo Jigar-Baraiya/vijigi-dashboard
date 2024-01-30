@@ -1,0 +1,18 @@
+ /* My CSS */
+.logo-image {
+   width: 100px;
+   /* Adjust the width as needed */
+   height: auto;
+   /* Maintain aspect ratio */
+}
+
+.vijigiop{
+  opacity: 0.8;
+}
+
+.bg-body {
+   background-image: linear-gradient(rgba(72, 66, 0, 0.7),rgba(145, 137, 77, 0.7)), url('BMW.jpg');
+   background-repeat: no-repeat;
+   background-size: 100%;
+   background-attachment: fixed;
+}
