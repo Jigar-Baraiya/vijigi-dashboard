@@ -58,36 +58,7 @@ include("without_login.php");
                     <?php
                     include("../config.php");
 
-                    if (isset($_GET['search'])) {
-                        $filtervalues = $_GET['search'];
-
-                        $uid = $_SESSION["uid"];
-                        $q = "select * from customer where OEM_id='$uid' and concat(customer_name,customer_email) like '%$filtervalues%'";
-                        $r = mysqli_query($con, $q);
-                        $re = $con->query($q);
-                        $res = $re->fetch_object();
-                        if (mysqli_num_rows($r) == 0) {
-                            echo "<tr>";
-                            echo "<td colspan='6' align='center'>" . "NO RECORDS FOUND" . "</td>";
-                            echo "</tr>";
-                        } else {
-                            while ($n = mysqli_fetch_array($r)) {
-
-                                echo "<tr>";
-                                echo "<td>" . $n[0] . "</td>";
-                                echo "<td>" . $n[1] . "</td>";
-                                echo "<td>" . $n[2] . "</td>";
-                                echo "<td>" . $n[3] . "</td>";
-                                echo "<td>" . $n[4] . "</td>";
-                                echo "<td>" . $n[5] . "</td>";
-                                echo "<td>" . "<a href='show_car_detail.php' class='btn btn-info'>Get car details</a>" . "</td>";
-                            }
-                        }
-                        ?>
-
-                        <?php
-                        echo "</tr>";
-                    } else {
+                    
                         $uid = $_SESSION["uid"];
                         $q = "select * from customer where OEM_id='$uid'";
                         $run = mysqli_query($con, $q);
@@ -106,7 +77,7 @@ include("without_login.php");
                                   ";
                             }
                         }
-                    }
+                    
 
                     ?>
 
