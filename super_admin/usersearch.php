@@ -3,7 +3,7 @@
 
     $name = $_POST['name'];
 
-    $sql = "select * from Users where user_name like '%$name%'";
+    $sql = "select * from Users where user_name like '%$name%' or user_email like '%$name%' or user_role like '%$name%' or user_mobile like '%$name%'";
     $query = mysqli_query($con,$sql);
     $data='';
     while($row = mysqli_fetch_assoc($query))
