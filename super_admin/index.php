@@ -48,7 +48,7 @@ include("without_login.php")
                         <h5>User Mobile</h5>
                     </td>
                     <td>
-                        <h5>User Emai</h5>
+                        <h5>User Email</h5>
                     </td>
                     <td>
                         <h5>User Role</h5>
