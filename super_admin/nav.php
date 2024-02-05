@@ -42,12 +42,7 @@
                     </li>
                 </ul>
 
-                <form class="d-flex" method="GET">
-                    <input class="form-control me-sm-2" type="text" placeholder="Search" name="search" value="<?php if (isset($_GET['search'])) {
-                        echo $_GET['search'];
-                    } ?>">
-                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
-                </form>
+                
 
             </div>
         </div>

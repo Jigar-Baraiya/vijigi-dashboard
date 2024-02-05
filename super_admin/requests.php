@@ -58,7 +58,7 @@ include("../config.php");
                                           echo "<td>" . $result['oem_contact_number'] . "</td>";
                                           echo "<td>" . $result['oem_email'] . "</td>";  
                                           echo "<td>" . $result['discription'] . "</td>";
-                                          echo "<td>"?><a href="mail.php?id=<?php echo $result['oem_email']?>&name=<?php echo $result['oem_name']; ?>" class='btn btn-info'>Reply</a>          <a href="delete_request.php?id=<?php echo $result['oem_email']?>" class='btn btn-danger'>Delete</a>
+                                          echo "<td>"?><a href="mail.php?id=<?php echo $result['oem_email']?>&name=<?php echo $result['oem_name']; ?>" class='btn btn-info'>Reply</a><a href="delete_request.php?id=<?php echo $result['oem_email']?>" class='btn btn-danger'>Delete</a>
                                         
                                           <?php echo"</td>";  
                                            echo "<tr>";  
